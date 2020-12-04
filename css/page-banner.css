@@ -1,0 +1,57 @@
+.page-banner
+{
+  width: 100%;
+  height: 50vh;
+  background-image: url('https://i.pinimg.com/originals/e2/90/9a/e2909aab62a0d9f7a4dcd095d2bdf069.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin:auto;
+  position: relative;
+}
+.container
+{
+  font-family: sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%,-50%);
+}
+.container span{
+  text-transform: uppercase;
+  display: block;
+}
+.text1
+{
+  color:white;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  background: black;
+  position: relative;
+  animation: text 5s 1;
+}
+.text2
+{
+  font-size: 30px;
+  color: #6ab04c;
+}
+@keyframes text {
+  0%{
+    color: black;
+    margin-bottom: -40px;
+  }
+  30%
+  {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85%
+  {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}

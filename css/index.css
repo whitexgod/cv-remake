@@ -6,13 +6,13 @@ html
 {
   scroll-behavior: smooth;
 }
-.main-box
-{
-background-image: url('https://i.ytimg.com/vi/RovleibldJ4/maxresdefault.jpg');
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
+body {
+  background-image: url('https://i.ytimg.com/vi/RovleibldJ4/maxresdefault.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
+
 .hr
 {
 border: dotted grey 6px;
@@ -31,206 +31,9 @@ url('Infinity-1s-200px.gif') no-repeat center;
 z-index:999999;
 }
 
-
-
-
-nav
-{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 1vh;
-  font-family: 'Poppins', sans-serif;
-  background-color: #cccccc;
-  background-image: linear-gradient(#add8e6, #153944);
-}
-.logo-img{
-width: 40px;
-height: 40px;
-border-radius: 50%;
-margin: auto;
-}
-.logo
-{
-  color: rgb(226, 226, 226);
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 20px;
-  display: flex;
-  align-items: left;
-}
-.nav-links{
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-around;
-  width: 50%;
-  font-family: "B612";
-}
-.nav-links a:hover{
-  font-style: italic;
-  font-weight: bold;
-  text-decoration: none;
-  color: orange;
-}
-.nav-links li{
-  list-style: none;
-}
-.nav-links a{
-  color: black;
-  text-decoration: none;
-  letter-spacing: 5px;
-  font-weight: bold;
-  font-size: 14px;
-}
-.burger{
-  display: none;
-  cursor: pointer;
-}
-.burger div{
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 5px;
-}
-@media screen and (max-width:1600px){
-  .nav-links{
-    width: 60%;
-  }
-  .nav-links a{
-    font-size: 13px;
-    letter-spacing: 4px;
-  }
-}
-@media screen and (max-width:1400px){
-  .nav-links{
-    width: 70%;
-  }
-  .nav-links a{
-    font-size: 12px;
-    letter-spacing: 4px;
-  }
-}
-
-@media screen and (max-width:1100px){
-  body{
-    overflow-x: hidden;
-  }
-  .logo{
-    font-size: 15px;
-  }
-  .nav-links{
-    position: absolute;
-    right: 0px;
-    height: 50vh;
-    top: 10vh;
-    background-color: #add8e6;
-    opacity: .8;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-    z-index: 999999;
-  }
-  .nav-links li{
-    opacity: 0;
-  }
-  .burger {
-    display: block;
-  }
-}
-.nav-active{
-  transform: translateX(0%);
-}
-@keyframes change
-{
-  from{
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-.toggle .line1{
-  transform: rotate(-45deg) translate(-5px,6px);
-}
-.toggle .line1{
-  opacity: 0;
-}
-.toggle .line1{
-  transform: rotate(45deg) translate(-5px,-6px);
-}
-
-
-
-
-.page-banner
-{
-  width: 100%;
-  height: 50vh;
-  background-image: url('https://i.pinimg.com/originals/e2/90/9a/e2909aab62a0d9f7a4dcd095d2bdf069.gif');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin:auto;
-  position: relative;
-}
-.container
-{
-  font-family: sans-serif;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  transform: translate(-50%,-50%);
-}
-.container span{
-  text-transform: uppercase;
-  display: block;
-}
-.text1
-{
-  color:white;
-  font-size: 60px;
-  font-weight: 700;
-  letter-spacing: 8px;
-  margin-bottom: 20px;
-  background: black;
-  position: relative;
-  animation: text 5s 1;
-}
-.text2
-{
-  font-size: 30px;
-  color: #6ab04c;
-}
-@keyframes text {
-  0%{
-    color: black;
-    margin-bottom: -40px;
-  }
-  30%
-  {
-    letter-spacing: 25px;
-    margin-bottom: -40px;
-  }
-  85%
-  {
-    letter-spacing: 8px;
-    margin-bottom: -40px;
-  }
-}
-
-
-
-
 #About{
   width: 100%;
-  height: 475vh;
+  height: 500vh;
 }
 .about-container
 {
@@ -296,23 +99,15 @@ margin: auto;
   width: 30%;
   height: 60vh;
   padding: 2%;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px;
   float: right;
 }
 .about-h3
 {
-  margin: auto;
-  padding: 2%;
-}
-.certificate-box
-{
-  width: 90%;
-  height: 100vh;
-  margin: auto;
+  margin-left: 40px;
 }
 .about-card-img{
-  width: 32%;
+  width: 30%;
   height: 70vh;
   margin: auto;
   padding: 2%;
